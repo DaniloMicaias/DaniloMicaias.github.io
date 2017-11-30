@@ -1,0 +1,15 @@
+.navbar {
+  background-color: black;
+}
+
+.navbar li a {
+  color: #0be1e5;
+}
+
+.navbar-brand{
+  font-size: 190%;
+}
+
+.light{
+  color: white;
+}
