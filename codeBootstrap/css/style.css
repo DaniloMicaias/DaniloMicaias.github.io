@@ -1,5 +1,6 @@
 .navbar {
   background-color: black;
+
 }
 
 .navbar li a {
@@ -12,4 +13,15 @@
 
 .light{
   color: white;
+}
+
+#sobre {
+  background-color: #efefef;
+  margin-top: 5%;
+  height: 50em;
+}
+
+.rounded-circle {
+  background-color: white;
+  
 }
