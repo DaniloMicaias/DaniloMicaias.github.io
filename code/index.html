@@ -8,6 +8,20 @@
 	<link rel="shortcut icon" type="image/x-icon" href="oie_transparent.png">
 </head>
 
+<script>
+   $(window).scroll(function() {
+
+    if ($(this).scrollTop()>160)
+     {
+        $('.a').fadeOut();
+     }
+    else
+     {
+      $('.a').fadeIn();
+     }
+ });
+</script>
+
 
 <body>
 	<header>

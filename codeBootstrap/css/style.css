@@ -25,3 +25,48 @@
   background-color: white;
   
 }
+
+.fadeInLeft {
+	animation: fadeInLeft 1s ease-in both;
+}
+
+.fadeInDown {
+	animation: fadeInDown 1s ease-in both;
+}
+
+.fadeInRigth {
+	animation: fadeInRigth 1s ease-in both;
+}
+
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(-20%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 20%,0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInRigth {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 0, -20%);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
