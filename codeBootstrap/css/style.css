@@ -38,6 +38,10 @@
 	animation: fadeInRigth 1s ease-in both;
 }
 
+.contact {
+	height: 50em;
+}
+
 @keyframes fadeInLeft {
 	from {
 		opacity: 0;
@@ -69,4 +73,27 @@
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 	}
+}
+
+#texto {
+	margin-top: 10%;
+	font-weight: bolder; 
+	color: black;
+	animation-name: fadeInDown 1s ease-in both;
+}
+
+.w3-button {
+	color: #0be1e5;
+}
+
+.footer{
+	padding-top:5rem;
+	padding-bottom:5rem;
+	background-color: black;
+	color:#fff
+}
+
+.footer h4{
+	color:#0be1e5;
+	font-weight: bolder;
 }
