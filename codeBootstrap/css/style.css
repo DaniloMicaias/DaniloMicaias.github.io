@@ -27,15 +27,15 @@
 }
 
 .fadeInLeft {
-	animation: fadeInLeft 1s ease-in both;
+	animation: fadeInUp 1s ease-in both;
 }
 
 .fadeInDown {
-	animation: fadeInDown 1s ease-in both;
+	animation: fadeInUp 1s ease-in both;
 }
 
 .fadeInRigth {
-	animation: fadeInRigth 1s ease-in both;
+	animation: fadeInUp 1s ease-in both;
 }
 
 .contact {
@@ -53,10 +53,10 @@
 	}
 }
 
-@keyframes fadeInDown {
+@keyframes fadeInUp {
 	from {
 		opacity: 0;
-		transform: translate3d(0, 20%,0);
+		transform: translate3d(0, -20%,0);
 	}
 	to {
 		opacity: 1;
