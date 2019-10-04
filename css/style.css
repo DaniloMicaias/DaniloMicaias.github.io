@@ -1,0 +1,380 @@
+body {
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #000000;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeOn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.container {
+	margin: auto;
+	overflow: hidden; 
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.button_1 {
+	height: 38px;
+	background: #ecb604;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #000000;
+}
+
+.dark {
+	padding: 15px;
+	background: #ecb604;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Estilizando o  Header*/
+header {
+	background: #000000;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #ecb604 3px solid; 
+}
+
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #branding {
+	float: left;
+}
+
+header #branding h1 {
+	margin: 0;
+}
+
+header nav {
+	float: left;
+	margin-top: 10px;
+}
+
+header .highlight, header .current a{
+	color: #ecb604;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #cccccc;
+	font-weight: bold;
+}
+
+
+
+/* Estilizando o ShowCase */
+#showcase {
+	min-height: 800px;
+	background: url('../img/background.jpg') no-repeat fixed;
+	background-size: 100%;
+	opacity: 0.2;
+	text-align: center;
+	color: #ffffff;
+}
+
+#showcase h1 {
+	margin-top: 20%;
+	font-size: 55px;
+	margin-bottom: 10px;
+	color: #ecb604;
+	animation: fadeIn 1s ease-in both;
+}
+
+#showcase p {
+	font-size: 20px;
+	animation: fadeIn 1s ease-in both;
+	animation-delay: 2s;
+	color: #ecb604;
+	opacity: 1;
+}
+
+#hi{
+	position: absolute;
+	opacity: 1;
+}
+
+#showcase2 {
+	min-height: 800px;
+	background: url('..	/img/empresa.jpg') no-repeat ;
+	text-align: center;
+	color: #ffffff;
+}
+
+#showcase2 h1 {
+	margin-top: 23%;
+	font-size: 55px;
+	margin-bottom: 10px;
+	animation: fadeOn 1s ease-in both;
+}
+
+#showcase2 p {
+	font-size: 20px;
+	animation: fadeOn 1s ease-in both;
+	animation-delay: 2s;
+}
+
+#newsletter {
+	padding: 15px;
+	color:#ecb604;
+	background: #000000;
+}
+
+#newsletter h1{
+	float: left;
+}
+
+#newsletter form{
+	float: right;
+	margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px; 
+}
+
+/* Estilizando os Boxes*/
+#boxes {
+	margin-top: 20px;
+}
+#boxe {
+	background-color: #ffffff;
+}
+
+#boxe .box{
+	float: left;
+	text-align: center;
+	width: 45%;
+	padding: 10px;
+}
+
+#boxe img{
+	height: 100%;
+}
+
+#boxe .box h3, p{
+	color: black;
+	font-weight: bold;
+	text-align: left;
+	width: 90%;
+}
+
+#boxe .box h3{
+	font-size: 50px;
+	color: #ecb604;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 47%;
+	padding: 10px;
+}
+
+
+#franq {
+	background-color: #ffffff;
+}
+
+#franq .box{
+	float: left;
+	text-align: center;
+	width: 45%;
+	padding: 10px;
+}
+
+#franq .box h1{
+	display: flex;
+	color: #ecb604;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+
+
+
+/* transição da box */
+
+/* #boxes .box:hover{
+	background-color: #7c761a;
+	border-radius: 20px;
+	transition: 1s all;
+}
+ */
+#boxes .box img {
+	width: 130%;
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: left;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+  }
+  
+  .button1 {
+	background-color:white; 
+	color:#ecb604; 
+	border: 2px solid #ecb604;
+  }
+  
+  .button1:hover {
+	background-color:#ecb604;
+	color:black;
+	border-radius: 10%;
+  }
+
+.but button{
+	padding: 16px 32px;
+	float: right;
+	margin: auto 5px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #ecb604; 
+	-webkit-transition-duration: 1s; /* Safari */
+	transition-duration: 1s;
+	color:black; 
+	border-radius: 500px 0;
+	border: 2px solid #ecb604;
+}
+
+.but button:hover{
+	background-color:black;
+	color:  #ecb604;
+	border-radius: 500px 0;
+}
+
+#about {
+	height: 50%;
+	background-color: white;
+	margin: 0 auto;
+	display: block;
+}
+
+#colections {
+	height: 500px;
+}
+  
+/* Estilizando o About */
+aside#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+	width: 90%;
+	padding: 5px;
+}
+
+article#main-col {
+	float: left;
+	width: 65%;
+}
+
+/* Services */
+ul#services li{
+	list-style: none;
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 5px;
+	background: #e6e6e6
+}
+
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #ecb604;
+	text-align: center; 
+}
+
+footer p{
+	color: #000000;
+	font-weight: bold;
+}
+
+@media(max-width: 768px){
+	header #branding,
+	header nav,
+	header,
+	nav li,
+	#newsletter form,
+	#newsletter h1,
+	#boxes .box,
+	article#main-col,
+	aside#sidebar{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+	header{
+		padding-bottom: 20px;
+	}
+
+	#showcase h1 {
+		margin-top: 40px;
+	}
+
+	#newsletter button, .quote button{
+		display: block;
+		width: 100%;
+	}
+
+	#newsletter form input[type="email"], .quote input, .quote textarea{
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}
