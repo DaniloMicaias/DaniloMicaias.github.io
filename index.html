@@ -3,10 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Sua Ótica | Welcome</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Sua Ótica</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="oie_transparent.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script language="JavaScript" type="text/javascript" src="cidades-estados-1.4-utf8.js"></script>
+	<script src="./script.js"></script>
+	<script src="jquery/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript" src="script.js"></script>
 </head>
 
 
@@ -22,8 +28,8 @@
 			<nav>
 				<ul>
 					<li class="current"><a href="index.html">Home</a></li>
-					<li><a href="#">Sobre</a></li>
-					<li><a href="#">Serviços</a></li>
+					<li><a href="about.html">Quem Somos</a></li>
+					<li><a href="services.html">Unidades</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -38,16 +44,15 @@
 	<section id="boxe">
 		<div class="container">
 			<div class="box">
-				<img src="img/back.png" style="width:80%;">
+				<img src="img/back.png" style="width:70%;">
 			</div>
 			<div class="box">
 				<h3>QUEM SOMOS</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at ultrices ante. 
-					Donec lobortis, urna id ultrices facilisis, justo nibh convallis eros, 
-					eget posuere enim turpis viverra lectus.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at ultrices ante. Donec lobortis, 
-					urna id ultrices facilisis, justo nibh convallis eros, eget posuere enim turpis viverra lectus.</p>
-				<button class="button button1">Conheça Mais</button>
+				<p >Somos uma empresa que atua no ramo de óculos de sol e de grau, lentes e armações, com mais de x anos de experiência na área,
+					com mais de x clientes atendidos e que atualmente oferece o modelo de franquia para aqueles que desejam ser donos
+					do próprio negócio.
+				</p>
+					<a href="about.html"><button class="button button1">Leia mais sobre</button></a>
 			
 			</div>
 			<div class="box">
@@ -61,47 +66,48 @@
 
 	<section id="boxes">
 		<div class="containerTo">
+			
 			<div class="boxFast">
-				
-			</di>
+					<h1 style="text-align: center;color: white;">Área destinada para imagens de modelos de óculos</h1>
+			</div>
 		</div>
 	</section>
 
 	<section id="franq" style="height: 500px;">
 		<div class="containerFranq">
-			<div class="main">
-				<h1 style="color: #ecb604;">Venha fazer parte dessa história</h1>
-				<h4>Escolha sua cidade e veja se já há uma franquia<h4>
-				<select name="">
-					<option value="1">Natal</option>
-					<option value="2">Macaíba</option>
-					<option value="3">Mossoró</option>
-					<option value="4">Caicó</option>
-					<option value="5">Parnamirim</option>
-					<option value="6">Jandaíra</option>
-					<option value="7">Nova Cruz</option>
-					<option value="8">Macau</option>
-					<option value="9">Guamaré</option>
-					<option value="10">Pau dos Ferros</option>
-					<option value="11">Monte Alegre</option>
-				</select>
+				<h3 style="color: #ecb604;">Venha fazer parte dessa história </h3>
+				<h3>Veja se seu estado já possui uma franquia da Sua Ótica</h3>
+	
+				<div class = "main">
+				<select id="estado2"></select>
+				<select id="cidade2"></select>
+				<script language="JavaScript" type="text/javascript" charset="utf-8">
+				new dgCidadesEstados({
+					cidade: document.getElementById('cidade2'),
+					estado: document.getElementById('estado2'),
+				})
+				</script>
+				<a href=#><button id="button-search" class="button button1">Pesquisar</button></a>
 			</div>
 		</div>
 	</section>
 
 	<section id="colections">
-		
+		<h1 style="text-align: center;">Área destinada para as redes sociais</h1>
 	</section>
 
-
-	
-
-
 	<footer>
-		<p>Sua Ótica, CopyRight &copy; 2019</p>
+		<section id="informations">
+			<div id="info">
+					<h4>Sede</h4>
+					<h4><i class="fa fa-home"></i> Rua Monte Gerezim, 44A, Centro - Extremoz/RN</h4>
+					<h4><i class="fa fa-phone"></i> (84) 9 8144-3907</h4>
+					<h4><i class="fa fa-at"></i> email@email.com</h4>
+				</div>
+		</section>
+		
+		<p>Code Web Design, CopyRight &copy; 2019 - Todos os direitos reservados</p>
 	</footer>
-	<script src="./script.js"></script>
-	<script src="jquery/jquery.js" type="text/javascript"></script>
-	<script type="text/javascript" src="script.js"></script>
+
 </body>
-</html>
+</html> 
