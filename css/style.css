@@ -2,7 +2,7 @@ body {
 	font: 15px/1.5 Arial, Helvetica, sans-serif;
 	padding: 0;
 	margin: 0;
-	background-color: #e6f576;
+	background-color: #d4cecd;
 }
 
 @keyframes fadeIn {
@@ -337,6 +337,7 @@ header a:hover {
 	padding-bottom: 5px;	
 }
 
+
   
 /* Estilizando o About */
 aside#sidebar {
@@ -356,17 +357,21 @@ article#main-col {
 	width: 65%;
 	padding-left: 10px;
 }
+
 .cards{
 	float:left;
 	width: 100%;
-	align-self: center;
+	align-items: center;
+	
 }
+
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	width: 32%;
 	float: left;
 	margin-right: 5px;
+	align-self: center;
   }
   
   .card:hover {
@@ -377,6 +382,58 @@ article#main-col {
 	padding: 2px 16px;
   }
 
+/*Redes sociais*/
+  .fa:hover {
+	  opacity: 0.7;
+  }
+  
+  .fa-facebook {
+	padding: 5%;
+	width: 10%;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;  
+	background: #3B5998;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  }
+
+  .fa-twitter {
+	padding: 5%;
+	width: 10%;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;  
+	background: #55ACEE;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  }
+  
+  .fa-instagram {
+	padding: 5%;
+	width: 10%;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;  
+	border-radius: 10px;
+	color: white;
+	vertical-align: middle;
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  }
+
+  #redes{
+	display: flex;
+ 	align-items: center;
+  	justify-content: center;
+}
+  #redes a{
+	margin: 8% 10px;
+
+  }
 /* Services */
 ul#services li{
 	list-style: none;
@@ -391,9 +448,7 @@ footer {
 	padding: 20px;
 	margin-top: 20px;
 	background-color:#161530 ;
-	text-align: center;
-	
-	
+	text-align: left;	
 }
 p{
 	text-align: justify;
