@@ -8,11 +8,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="oie_transparent.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script language="JavaScript" type="text/javascript" src="cidades-estados-1.4-utf8.js"></script>
-	<script src="./script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	<script src="./script.js"></script>
 	<script src="jquery/jquery.js" type="text/javascript"></script>
 	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="pesquisa.js"></script>
+
 </head>
 
 <body>
@@ -78,16 +78,16 @@
 				<h3>Veja se seu estado já possui uma franquia da Sua Ótica</h3>
 	
 				<div class = "main">
-				<select id="estado2"></select>
-				<select id="cidade2"></select>
-				<script language="JavaScript" type="text/javascript" charset="utf-8">
-				new dgCidadesEstados({
-					cidade: document.getElementById('cidade2'),
-					estado: document.getElementById('estado2'),
-				})
-				</script>
-				<a href=#><button id="button-search" class="button button1">Pesquisar</button></a>
-			</div>
+					<select id="estado" onchange="buscaCidades(this.value)">
+						<option value="">Selecione o Estado</option>
+						<option value="AC">Acre</option>
+						<option value="AL">Alagoas</option>
+						<option value="AM">Amazonas</option>
+						<option value="RN">Rio Grande do Norte</option>
+					</select>
+					<select id="cidade"></select>
+					<a href=#><button id="button-search" class="button button1">Pesquisar</button></a>
+				</div>
 		</div>
 	</section>
 
