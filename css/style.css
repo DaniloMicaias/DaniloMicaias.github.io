@@ -210,7 +210,7 @@ header a:hover {
 }
 
 #boxes .box{
-	text-align: center;
+	text-align: justify;
 	width: 47%;
 	padding: 10px;
 }
@@ -324,6 +324,8 @@ header a:hover {
 #informations{
 	background-color:#2d2c4d;
 	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	color: #f6f6f6;
 
 }
 
@@ -334,7 +336,9 @@ header a:hover {
 	text-align: left;
 	margin-left: 30px;
 	padding-top: 5px;
-	padding-bottom: 5px;	
+	padding-bottom: 5px;
+	width: 38%;
+	display: inline-block;
 }
 
 
@@ -411,7 +415,7 @@ article#main-col {
 	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   }
   
-  .fa-instagram {
+  .fa-whatsapp{
 	padding: 5%;
 	width: 10%;
 	text-align: center;
@@ -419,19 +423,26 @@ article#main-col {
 	margin: 5px 2px;  
 	border-radius: 10px;
 	color: white;
-	vertical-align: middle;
-	background: #d6249f;
-	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+	background: #25d366;
 	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   }
 
+
+  #redes h2{
+	width: 70%;
+	margin-left: 30%;	
+	
+  }
   #redes{
-	display: flex;
- 	align-items: center;
-  	justify-content: center;
+	width: 40%;
+	float: right;
+	display: inline-block;
+	height: 50%;
+	margin-top: 2%;
+	
 }
   #redes a{
-	margin: 8% 10px;
+	margin-left: 10%;
 
   }
 /* Services */
@@ -471,6 +482,7 @@ footer p{
 		float: none;
 		text-align: center;
 		width: 100%;
+		
 	}
 
 	header{
