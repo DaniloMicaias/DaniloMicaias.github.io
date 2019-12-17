@@ -10,9 +10,6 @@
 	<link rel="shortcut icon" type="image/x-icon" href="oie_transparent.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	<script src="./script.js"></script>
 	<script src="jquery/jquery.js" type="text/javascript"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="pesquisa.js"></script>
-
 </head>
 
 <body>
@@ -77,17 +74,20 @@
 				<h3 style="color: #ecb604;">Venha fazer parte dessa história </h3>
 				<h3>Veja se seu estado já possui uma franquia da Sua Ótica</h3>
 
-				<div class = "main">
-					<select id="estado" onchange="buscaCidades(this.value)">
-						<option value="">Selecione o Estado</option>
-						<option value="AC">Acre</option>
-						<option value="AL">Alagoas</option>
-						<option value="AM">Amazonas</option>
-						<option value="RN">Rio Grande do Norte</option>
-					</select>
-					<select id="cidade"></select>
-					<a href=#><button id="button-search" class="button button1">Pesquisar</button></a>
-				</div>
+				<form>
+        
+						<!-- estados -->
+						<label for="estados">Estado:</label>
+						<select id="estados">
+						</select>
+						
+						<!-- cidades -->
+						<label for="cidades">Cidades:</label>
+						<select id="cidades">
+						  <option value="none">Selecione um estado</option>
+						</select>
+					
+				</form>
 		</div>
 	</section>
 
@@ -114,6 +114,7 @@
 		
 		<p>Sua Ótica, CopyRight &copy; 2019 - Todos os direitos reservados</p>
 	</footer>
-
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script  src="./estados.js"></script>
 </body>
 </html> 

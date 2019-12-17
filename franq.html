@@ -8,24 +8,24 @@
 </head>
 <body>
     <div class="container">  
-        <form id="contact" action="" method="post">
+        <form id="contact" action="./email.php" method="POST">
           <h4>PREENCHA O FORMULÁRIO E CONHEÇA AS VANTAGENS DE SER NOSSO FRANQUEADO</h4>
           
           <fieldset>
             <p>Nome Completo</p>
-            <input placeholder="Seu nome" type="text" tabindex="1" required autofocus>
+            <input placeholder="Seu nome" type="text" name="name" tabindex="1" required autofocus>
           </fieldset>
           <fieldset>
             <p>Email para contato</p>
-            <input placeholder="Ex: email@email.com" type="email" tabindex="2" required>
+            <input placeholder="Ex: email@email.com" type="email" name="email" tabindex="2" required>
           </fieldset>
           <fieldset>
             <p>Whatsapp</p>      
-            <input placeholder="Ex: (84) 9999-9999" type="tel" tabindex="3" required>
+            <input placeholder="Ex: (84) 9999-9999" type="tel" name="whats" tabindex="3" required>
           </fieldset>
           <fieldset>
               <p>Capital disponível para investimento</p>
-            <select placeholder="Capital disponível para investimento">
+            <select placeholder="Capital disponível para investimento" name="capital">
                 <option>a partir de R$ 100 MIL</option>
                 <option>a partir de R$ 150 MIL</option>
                 <option>a partir de R$ 200 MIL</option>

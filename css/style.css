@@ -4,6 +4,17 @@ body {
 	margin: 0;
 	background-color: #d4cecd;
 }
+form label{
+	display: block;
+	font-family: Arial;
+	padding: 8px 5px;
+  }
+  
+  form select{
+	padding: 8px;
+	width: 250px;
+	margin-bottom: 15px;
+  }
 
 @keyframes fadeIn {
 	from {
@@ -523,9 +534,6 @@ footer p{
 	  min-width:150px;
 	  width:auto;
 	}
-  }
-  select {
-	  display: none !important;
   }
   
   .dropdown-select {
