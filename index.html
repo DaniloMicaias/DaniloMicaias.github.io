@@ -194,7 +194,7 @@
 
 				<!-- cidades -->
 				<label for="cidades">Cidades:</label>
-				<select id="cidades">
+				<select id="cidades" onchange="verifica()">
 					<option value="none">Selecione um estado</option>
 				</select>
 
@@ -282,6 +282,38 @@
 			slides[slideIndex - 1].style.display = "block";
 			dots[slideIndex - 1].className += " active";
 			setTimeout(showSlides, 3000); // Muda a imagem a cada 3 segundos
+		}
+		function verifica(){
+			var x = document.getElementById("cidades").value;
+			if(x=='Natal'){
+				if(confirm("Já existe uma franquia nessa cidade. Deseja ver onde fica?")){
+					window.open('https://suaotica.org/natal.html')
+				}else{
+					close();
+				}
+			}else if(x=='Extremoz'){
+				if(confirm("Já existe uma franquia nessa cidade. Deseja ver onde fica?")){
+					window.open('https://suaotica.org/extremoz.html')
+				}else{
+					close();
+				}
+			}else if(x=='Touros'){
+				if(confirm("Já existe uma franquia nessa cidade. Deseja ver onde fica?")){
+					window.open('https://suaotica.org/touros.html')
+				}else{
+					close();
+				}
+			}else if(x=='Caiçara do Norte'){
+				if(confirm("Já existe uma franquia nessa cidade. Deseja ver onde fica?")){
+					window.open('https://suaotica.org/caicara.html')
+				}else{
+					close();
+				}
+			}else if(confirm("Ainda não temos franquia nessa cidade. Está interessado em criar uma?")){
+				window.open('https://suaotica.org/franq.html')
+			}else{
+				close();
+			}
 		}
 	</script>
 
